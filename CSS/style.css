@@ -187,7 +187,7 @@ body {
   max-width: 100%;
   word-wrap: break-word; /* Asegura que el texto largo se ajuste */
 }
-@media (max-width: 768px) {
+@media (max-width: 640px) {
   .contacto {
     padding-left: 10px; /* Reduce el padding en pantallas pequeñas */
     padding-right: 10px; /* Agrega un poco de padding a la derecha */
