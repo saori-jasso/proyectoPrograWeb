@@ -1,0 +1,355 @@
+:root {
+    --red-accent: rgb(255, 61, 61);
+    --dark-bg: #0a0a0a;
+}
+body {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    color: rgb(var(--bs-tertiary-color-rgb));
+  }
+  .carousel {
+    margin-bottom: 4rem;
+  }
+  .carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+  }
+  .carousel-item {
+    height: 32rem;
+  }
+   .marketing .col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  .marketing .col-lg-4 p {
+    margin-right: .75rem;
+    margin-left: .75rem;
+  }
+  .featurette-divider {
+    margin: 5rem 0; 
+  }
+  .featurette-heading {
+    letter-spacing: -.05rem;
+  } 
+  @media (min-width: 40em) {
+    .carousel-caption p {
+      margin-bottom: 1.25rem;
+      font-size: 1.25rem;
+      line-height: 1.4;
+    }
+  
+    .featurette-heading {
+      font-size: 50px;
+    }
+  }
+  
+  @media (min-width: 62em) {
+    .featurette-heading {
+      margin-top: 7rem;
+    }
+  }
+  p { text-align: left; }
+  svg { height: 48px; }
+
+  .bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+  .b-example-vr {
+    flex-shrink: 0;
+    width: 1.5rem;
+    height: 100vh;
+  }
+
+  .bi {
+    vertical-align: -.125em;
+    fill: currentColor;
+  }
+
+  .nav-scroller {
+    position: relative;
+    z-index: 2;
+    height: 2.75rem;
+    overflow-y: hidden;
+  }
+
+  .nav-scroller .nav {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-bottom: 1rem;
+    margin-top: -1px;
+    overflow-x: auto;
+    text-align: center;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .bd-mode-toggle {
+    z-index: 1500;
+  }
+
+  .bd-mode-toggle .dropdown-menu .active .bi {
+    display: block !important;
+  }
+  .navStyle{
+    background-color: var(--red-accent);
+    font-family: "Abel", sans-serif;
+    font-weight: 400;
+  }
+  .button{
+    background-color: var(--red-accent);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+  }
+  h1, h2,h3,p{
+    font-family: "Abel", sans-serif;
+    font-weight: 400;
+  }
+  h2,h3{
+    font-weight: 700;
+  }
+  
+ /*CSS DE CONTACTO*/
+
+ .banner-container {
+  width: 100%; /* La imagen ocupa todo el ancho */
+
+}
+
+.carousel-inner img {
+  height: 90%; /* Ajusta la altura del carrusel */
+  object-fit: cover; /* Asegura que las imágenes se ajusten sin deformarse */
+}
+.carousel{
+  margin-bottom: 0;
+}
+ .cajasContacto{
+  border-radius: 40px; 
+  padding: 5%;
+  width: 100%;
+  max-width: 50%;
+  margin: 0 auto;
+  border: solid 5px var(--red-accent);
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.171), white); /* Cambia el color al pasar el mouse */
+
+}
+.cajasContacto:hover {
+  background: linear-gradient(to right, rgba(255, 0, 0, 0.199), white); /* Cambia este color al que desees */
+  transform: scale(1.01); /* Hace que la caja crezca ligeramente */
+}
+.textoNombre{
+  font-weight: 700!important;
+  color: var(--red-accent);
+ }
+ .bordesImagen{
+  border:solid 4px var(--red-accent);
+  border-radius: 10px; 
+ }
+ .textoCajaContacto{
+  text-align: center;
+ }
+ .btn-contactos{
+  font-family: "Abel", sans-serif;
+  font-weight: 700; 
+ }
+ .btn-negritas{
+  font-weight: 700!important;
+ }
+ .d-flex {
+  display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap; /* Permite que las cajas se ajusten en filas si no caben */
+}
+
+.cajasContacto {
+  flex: 1 1 45%; /* Cada caja ocupa el 45% del ancho disponible */
+  margin: 10px; /* Espaciado entre las cajas */
+}
+
+/*PAGINA DE CONTENIDO*/
+.carousel-inner img {
+  width: 100%;
+  height: 600px; 
+}
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 15px; 
+  padding: 15px; 
+  color: #fff; 
+  max-width: 50%; 
+  margin: 0 auto;
+}
+.carousel-caption h5 {
+  font-family: 'Orbitron', sans-serif; 
+  color: #fff; 
+}
+
+.carousel-caption p {
+  font-family: 'Montserrat', sans-serif; 
+  color: #fff; 
+}
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute; 
+  top: 50%; 
+  transform: translateY(-50%); 
+  background-color: rgba(255, 255, 255, 0.6); 
+  border-radius: 50%; /* Bordes redondeados */
+  width: 50px; /* Tamaño del botón */
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10; /* Asegura que las flechas estén encima del contenido */
+  transition: transform 0.2s ease, background-color 0.3s ease; /* Animación suave */
+}
+
+/* Efecto al pasar el mouse */
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background-color: rgba(255, 0, 0, 0.8); 
+  transform: translateY(-50%) scale(1.1); 
+}
+
+/* Efecto al presionar */
+.carousel-control-prev:active,
+.carousel-control-next:active {
+  background-color: rgba(255, 0, 0, 1); 
+  transform: translateY(-50%) scale(0.95); 
+}
+.carousel-control-prev {
+  left: 20px; /* Ajusta la distancia desde el borde izquierdo */
+}
+
+.carousel-control-next {
+  right: 20px; /* Ajusta la distancia desde el borde derecho */
+}
+
+.responsive-iframe {
+  width: 100%; 
+  aspect-ratio: 16 / 9; 
+  border: none; 
+}
+.menu-personajes {
+  display: flex; 
+  flex-direction: row; 
+  width: 100vw; /* Ocupa todo el ancho de la ventana */
+  height: 100vh; /* Ocupa toda la altura de la ventana */
+  margin: 0;
+  padding: 0;
+}
+.personaje {
+  flex: 1; /* Cada personaje ocupa el mismo ancho */
+  height: 100%; 
+  background-size: cover; /* Ajusta la imagen al tamaño del contenedor */
+  background-position: center; 
+  display: flex;
+  align-items: flex-end; /* Alinea el texto al fondo */
+  justify-content: center;
+  color: white; 
+  font-size: 1.5rem; 
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); 
+  transition: transform 0.3s ease, box-shadow 0.5s ease; 
+  cursor: pointer;
+}
+
+.personaje:hover {
+  transform: scale(1.02); /* Aumenta ligeramente el tamaño al pasar el mouse */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); 
+}
+
+.personaje h3 {
+  margin: 0;
+  padding: 10px;
+  font-family: 'Orbitron', sans-serif; 
+  text-align: center;
+}
+/*HOJA DE LIBROS*/
+.banner {
+  width: 100%;
+  height: 100vh; /* Ocupa toda la altura de la ventana */
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  perspective: 1500px; /* Agrega profundidad 3D */
+}
+
+.banner .slider {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d; /* Habilita el efecto 3D */
+  animation: rotate 15s linear infinite; /* Rotación automática */
+}
+
+.banner .slider .item {
+  position: absolute;
+  width: 150px; /* Ancho de cada elemento */
+  height: 250px; /* Altura de cada elemento */
+  top: 20%;
+  left: 50%;
+  transform-style: preserve-3d;
+  transform: rotateY(calc(var(--position) * 36deg)) translateZ(500px); /* Ajusta la posición en círculo */
+  transform-origin: center center; /* Punto de rotación */
+}
+
+.banner .slider .item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ajusta la imagen al tamaño del contenedor */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra */
+}
+
+/* Animación de rotación */
+@keyframes rotate {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+/* Estilo para pantallas medianas (tabletas) */
+@media (max-width: 768px) {
+  .banner .slider .item {
+    width: 120px; 
+    height: 200px;
+    transform: rotateY(calc(var(--position) * 36deg)) translateZ(400px); /* Reduce el radio del círculo */
+  }
+}
+
+/* Estilo para pantallas pequeñas (celulares) */
+@media (max-width: 480px) {
+  .banner .slider .item {
+    width: 80px;
+    height: 120px; 
+    transform: rotateY(calc(var(--position) * 36deg)) translateZ(300px); /* Reduce el radio del círculo */
+  }
+}
+
+@media (max-width: 768px) {
+  .cajasContacto {
+    width: 90%; 
+    max-width: none; 
+    margin-bottom: 20px;
+  }
+}
