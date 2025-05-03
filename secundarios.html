@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Saori Jasso, ,and Bootstrap contributors">
+    <title>Secundarios</title>
+    <link rel="icon" type="image/x-icon" href="Img/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="CSS/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+</head>
+<body style="background-color: #f4f4f4;">
+    <header data-bs-theme="dark">
+        <nav class="navbar navbar-expand-md navbar-light fixed-top navStyle">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">MAZE RUNNER</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav">
+                        <!-- Dropdown: Libros -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink_1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Libros
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink_1">
+                                <li><a class="dropdown-item" href="precuelas.html">Precuelas</a></li>
+                                <li><a class="dropdown-item" href="trilogia.html">Trilogía Principal</a></li>
+                                <li><a class="dropdown-item" href="secuelas.html">Secuela</a></li>
+                                <li><a class="dropdown-item" href="adicionales.html">Lecturas Adicionales</a></li>
+                            </ul>
+                        </li>
+                        <!-- Dropdown: Películas -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink_2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Películas
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink_2">
+                                <li><a class="dropdown-item" href="correrOmorir.html">Correr o Morir</a></li>
+                                <li><a class="dropdown-item" href="pruebaDeFuego.html">Prueba de Fuego</a></li>
+                                <li><a class="dropdown-item" href="curaMortal.html">La Cura Mortal</a></li>
+                            </ul>
+                        </li>
+                        <!-- Dropdown: Personajes -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink_3" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Personajes
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink_3">
+                                <li><a class="dropdown-item" href="personajesPrincipales.html">Principales</a></li>
+                                <li><a class="dropdown-item" href="secundarios.html">Secundarios</a></li>
+                                <li><a class="dropdown-item" href="criaturas.html">Criaturas</a></li>
+                            </ul>
+                        </li>
+                        <!-- Otros enlaces -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="datosCuriosos.html">Datos Curiosos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Misterios del Laberinto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container-fluid2">
+        <div class="row h-100 g-0">
+            <!-- Columna de personajes (10 filas)-->
+            <div class="col-md-4">
+                <div class="characters-column h-100">
+                    <div class="character-card selected" onclick="showCharacter('chuck')">
+                        <img src="Img/chuckHorizontal.png" alt="Chuck">
+                    </div>
+                    <div class="character-card" onclick="showCharacter('alby')">
+                        <img src="Img/albyHorizontal.jpg" alt="Alby">
+                    </div>
+                    <div class="character-card" onclick="showCharacter('frypan')">
+                        <img src="Img/frypanHorizontal.jpg" alt="Frypan">
+                    </div>
+                    <div class="character-card" onclick="showCharacter('brenda')">
+                        <img src="Img/brendaHorizontal.png" alt="Brenda">
+                    </div>
+                    <div class="character-card" onclick="showCharacter('jorge')">
+                        <img src="Img/jorgeHorizontal.jpg" alt="Jorge">
+                    </div>
+                    <div class="character-card" onclick="showCharacter('aris')">
+                        <img src="Img/arisHorizontal.jpg" alt="Aris">
+                    </div>
+                    <div class="character-card" onclick="showCharacter('sonya')">
+                        <img src="Img/sonyaHorizontal.jpg" alt="Sonya">
+                    </div>
+                    <div class="character-card" onclick="showCharacter('harriet')">
+                        <img src="Img/harrietHorizontal.jpg" alt="harriet">
+                    </div>
+                    <div class="character-card" onclick="showCharacter('ava')">
+                        <img src="Img/avaHorizontal.jpg" alt="ava">
+                    </div>
+                    <div class="character-card" onclick="showCharacter('janson')">
+                        <img src="Img/jansonHorizontal.jpg" alt="janson">
+                    </div>
+                
+                </div>
+            </div>
+
+            <!-- Columna de información -->
+            <div class="col-md-8">
+                <div class="info-column">
+                    <!-- Chuck -->
+                    <div id="chuck-info"  class="character-info2 active character-description">
+                        <h2 class="hero-title">Chuck</h2>
+                        
+                        <p>Chuck fue un personaje que apareció por primera vez en Correr o Morir, es el mejor amigo de Thomas desde que éste llegó al Claro. Su nombre proviene de Charles Darwin..</p>
+                        <ul>
+                            <li><strong>Rol:</strong> Ayudante general / El más joven del Claro</li>
+                            <li><strong>Interpretado por:</strong> Blake Cooper</li>
+                            <li><strong>Primera aparición:</strong> Maze Runner: Correr o Morir (2014)</li>
+                        </ul>
+                    </div>
+
+                    <div id="alby-info"  class="character-info2  character-description">
+                        <h2 class="hero-title">Alby</h2>
+                        
+                        <p>Primer líder del Claro y el más veterano de los habitantes. Alby fue el primer chico en llegar al laberinto y estableció las reglas básicas de convivencia. Su liderazgo se basa en la experiencia y el pragmatismo.</p>
+                        <ul>
+                            <li><strong>Rol:</strong> Líder original del Claro</li>
+                            <li><strong>Interpretado por:</strong> Aml Ameen</li>
+                            <li><strong>Primera aparición:</strong> Maze Runner: Correr o Morir (2014)</li>
+                        </ul>
+                    </div>
+                    <div id="frypan-info" class="character-info2 character-description">
+                        <h2 class="hero-title">Frypan</h2>
+                        
+                        <p>Conocido como el Guardián de los Cocineros en el Claro, Frypan (originalmente llamado Siggy por WCKD y Toby por sus padres) es un personaje clave en el grupo de los Inmunes. A pesar de las bromas sobre su comida, en realidad es un excelente cocinero y un leal amigo de Thomas, Newt y Minho.</p>
+                        <ul>
+                            <li><strong>Rol:</strong> Guardián de los Cocineros / Miembro del Brazo Derecho</li>
+                            <li><strong>Interpretado por:</strong> Dexter Darden</li>
+                            <li><strong>Primera aparición:</strong> Maze Runner: Correr o Morir (2014)</li>
+                            <li><strong>Nombre original:</strong> Toby (antes de WCKD), Sigmund "Siggy" Freud (nombre dado por WCKD)</li>
+                        </ul>
+                    </div>
+                    
+                    <div id="brenda-info" class="character-info2 character-description">
+                        <h2 class="hero-title">Brenda</h2>
+                        
+                        <p>Una sobreviviente resistente del Yermo que se une a Thomas y sus amigos. Brenda inicialmente lidera un grupo de supervivientes con Jorge antes de unirse al Brazo Derecho. Es inmune al Flare y desarrolla una estrecha relación con Thomas.</p>
+                        <ul>
+                            <li><strong>Rol:</strong> Superviviente del Yermo / Miembro del Brazo Derecho</li>
+                            <li><strong>Interpretado por:</strong> Rosa Salazar</li>
+                            <li><strong>Primera aparición:</strong> Maze Runner: Prueba de Fuego (2015)</li>
+                        </ul>
+                    </div>
+                    
+                    <div id="jorge-info" class="character-info2 character-description">
+                        <h2 class="hero-title">Jorge</h2>
+                        
+                        <p>Un líder carismático y astuto que sobrevive en el Yermo junto a Brenda. Jorge es conocido por su ingenio y habilidades tácticas, ayudando al grupo de Thomas en múltiples ocasiones. Tiene conocimientos sobre WCKD y la Última Ciudad.</p>
+                        <ul>
+                            <li><strong>Rol:</strong> Líder de supervivientes / Aliado del Brazo Derecho</li>
+                            <li><strong>Interpretado por:</strong> Giancarlo Esposito</li>
+                            <li><strong>Primera aparición:</strong> Maze Runner: Prueba de Fuego (2015)</li>
+                        </ul>
+                    </div>
+                    
+                    <div id="aris-info" class="character-info2 character-description">
+                        <h2 class="hero-title">Aris</h2>
+                        
+                        <p>El primer sobreviviente del Laberinto del Grupo B, Aris se une a Thomas después de escapar de las instalaciones de WCKD. Es un aliado clave que ayuda a revelar los verdaderos planes de WCKD y se une a la resistencia.</p>
+                        <ul>
+                            <li><strong>Rol:</strong> Sobreviviente del Laberinto B / Miembro del Brazo Derecho</li>
+                            <li><strong>Interpretado por:</strong> Jacob Lofland</li>
+                            <li><strong>Primera aparición:</strong> Maze Runner: Prueba de Fuego (2015)</li>
+                        </ul>
+                    </div>
+                    
+                    <div id="sonya-info" class="character-info2 character-description">
+                        <h2 class="hero-title">Sonya</h2>
+                        
+                        <p>Una de las líderes del Grupo B, Sonya es una chica fuerte y decidida que sobrevive al Laberinto junto a Harriet. Es capturada por WCKD pero luego rescatada por Thomas y sus aliados.</p>
+                        <ul>
+                            <li><strong>Rol:</strong> Líder del Grupo B / Inmune</li>
+                            <li><strong>Interpretado por:</strong> Katherine McNamara</li>
+                            <li><strong>Primera aparición:</strong> Maze Runner: Prueba de Fuego (2015)</li>
+                        </ul>
+                    </div>
+                    
+                    <div id="harriet-info" class="character-info2 character-description">
+                        <h2 class="hero-title">Harriet</h2>
+                        
+                        <p>Compañera de Sonya en el Grupo B, Harriet es una corredora habilidosa y valiente. Junto a Sonya, representa a las sobrevivientes femeninas de los experimentos de WCKD y se une a la lucha contra la organización.</p>
+                        <ul>
+                            <li><strong>Rol:</strong> Corredora del Grupo B / Inmune</li>
+                            <li><strong>Interpretado por:</strong> Nathalie Emmanuel</li>
+                            <li><strong>Primera aparición:</strong> Maze Runner: Prueba de Fuego (2015)</li>
+                        </ul>
+                    </div>
+                    
+                    <div id="ava-info" class="character-info2 character-description">
+                        <h2 class="hero-title">Ava Paige</h2>
+                        
+                        <p>La Canciller de WCKD y principal antagonista de la serie. Aunque inicialmente parece estar muerta, revela ser la mente maestra detrás de los experimentos del Laberinto y el Yermo, todo en nombre de encontrar una cura para el Flare.</p>
+                        <ul>
+                            <li><strong>Rol:</strong> Canciller de WCKD</li>
+                            <li><strong>Interpretado por:</strong> Patricia Clarkson</li>
+                            <li><strong>Primera aparición:</strong> Maze Runner: Correr o Morir (2014)</li>
+                        </ul>
+                    </div>
+                    
+                    <div id="janson-info" class="character-info2 character-description">
+                        <h2 class="hero-title">Janson</h2>
+                        
+                        <p>El Director Asistente de WCKD y antagonista secundario. Conocido como "El Hombre Rata" en los libros, Janson es despiadado en su búsqueda por experimentar con los Inmunes. Finalmente se revela que está infectado con el Flare.</p>
+                        <ul>
+                            <li><strong>Rol:</strong> Director Asistente de WCKD</li>
+                            <li><strong>Interpretado por:</strong> Aidan Gillen</li>
+                            <li><strong>Primera aparición:</strong> Maze Runner: Prueba de Fuego (2015)</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showCharacter(characterId) {
+            // Remover selección anterior
+            document.querySelectorAll('.character-card').forEach(card => {
+                card.classList.remove('selected');
+            });
+            
+            // Aplicar selección nueva
+            event.currentTarget.classList.add('selected');
+            
+            // Ocultar toda la información
+            document.querySelectorAll('.character-info2').forEach(info => {
+                info.classList.remove('active');
+            });
+            
+            // Mostrar información del personaje seleccionado
+            document.getElementById(`${characterId}-info`).classList.add('active');
+        }
+    </script>
+    
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>
