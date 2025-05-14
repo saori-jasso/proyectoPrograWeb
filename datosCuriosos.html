@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Saori Jasso, ,and Bootstrap contributors">
+    <title>Datos Curiosos</title>
+    <link rel="icon" type="image/x-icon" href="Img/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="CSS/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+   <style>
+    body{
+      background-image: url('Img/fondoDatosCuriosos.jpg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+           text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    }
+    h1,h2{
+      font-family: 'Orbitron', sans-serif;
+       font-weight: bold;
+       text-transform: uppercase;
+       letter-spacing: 3px;
+       margin-top: 1rem;
+       text-shadow: 0 0 10px rgba(147, 147, 147, 0.349);
+       color:var(--red-accent) ;
+       line-height: 1.2;
+       font-size: 2em;
+    }
+    h1 {
+            text-align: left;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+            color: rgb(44, 81, 79);
+
+  }   h2{
+          color: white;
+          background-color:rgb(63, 130, 109) ;
+          padding: 20px;
+          border-bottom: 5px solid #d0d0d0;
+  }
+    ul {
+                list-style-type: square;
+                margin-left: 30px;
+                padding-left: 0;
+        }
+    .external-frame {
+            width: 100%;
+            max-width: 1000px;
+            height: 800px;
+            margin: 30px auto;
+            box-shadow:0 0 30px rgba(0, 0, 0, 0.539) ;
+            border-radius: 5px;
+            display: block; /* Para centrarlo con margin auto */
+    }
+    strong {
+            font-weight: bold;
+            color: white;
+            font-size: 1.5em;
+             color:rgb(31, 60, 51) ;
+               font-family: 'Orbitron', sans-serif;
+        }
+    .main-paragraph {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: rgb(25, 43, 42);
+            color: white;
+            border-radius: 5px;
+            font-family: "Montserrat", sans-serif;
+            font-weight: 400;
+            max-width: 100%;
+      }
+    .main-paragraph2 {
+          margin-bottom: 20px;
+          padding: 15px;
+          background-color: rgb(64, 108, 106);
+          color: white;
+          border-radius: 5px;
+          font-family: "Montserrat", sans-serif;
+          font-weight: 400;
+          max-width: 100%;
+    }
+    table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background-color: #b7cbc7b7;
+            color: #ECEFF1;
+            box-shadow: 2px 2px 5px #000;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+            color:#000
+        }
+        th {
+           color: white;
+            background-color: black;
+            font-weight: bold;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        img{
+            max-width: 100%;
+            height: auto;
+            margin: 10px auto;
+            display: block;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        
+
+   </style> 
+
+</head>
+
+
+
+<body class="colorHoja" style="padding: 5%; font-family: Montserrat, sans-serif; font-size: 1.2rem; padding-left: 20%; padding-right:20% ;" >
+ <header data-bs-theme="dark">
+  <nav class="navbar navbar-expand-md navbar-light fixed-top navStyle">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">MAZE RUNNER</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav">
+          <!-- Dropdown: Libros -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink_1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Libros
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink_1">
+              <li><a class="dropdown-item" href="precuelas.html">Precuelas</a></li>
+              <li><a class="dropdown-item" href="trilogia.html">Trilogía Principal</a></li>
+              <li><a class="dropdown-item" href="secuelas.html">Secuela</a></li>
+              <li><a class="dropdown-item" href="adicionales.html">Lecturas Adicionales</a></li>
+            </ul>
+          </li>
+          <!-- Dropdown: Películas -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink_2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Películas
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink_2">
+              <li><a class="dropdown-item" href="correrOmorir.html">Correr o Morir</a></li>
+              <li><a class="dropdown-item" href="pruebaDeFuego.html">Prueba de Fuego</a></li>
+              <li><a class="dropdown-item" href="curaMortal.html">La Cura Mortal</a></li>
+            </ul>
+          </li>
+          <!-- Dropdown: Personajes -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink_3" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Personajes
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink_3">
+              <li><a class="dropdown-item" href="personajesPrincipales.html">Principales</a></li>
+              <li><a class="dropdown-item" href="secundarios.html">Secundarios</a></li>
+              <li><a class="dropdown-item" href="criaturas.html">Criaturas</a></li>
+            </ul>
+          </li>
+          <!-- Otros enlaces -->
+          <li class="nav-item">
+            <a class="nav-link" href="datosCuriosos.html">Datos Curiosos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="misteriosLaberinto.html">Misterios del Laberinto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <div style="background-color: #ffffffac; padding: 40px; border-radius: 8px;">
+  <h1 class="mr-titleDatosCurioso">Datos Curiosos de Maze Runner</h1>
+
+    <div>
+        <p class="main-paragraph">La adaptación cinematográfica de "Maze Runner" trajo consigo una serie de datos curiosos que fascinaron a los fanáticos de la saga literaria. Desde la inexperiencia de Wes Ball como director de largometrajes hasta la curiosa decisión de eliminar la telepatía entre Thomas y Teresa, la producción estuvo llena de particularidades. El elenco, aclamado por su fidelidad a los personajes de los libros, incluso realizó un campamento previo a la filmación para imbuirse del espíritu de los habitantes del Claro. Cambios en el guion, como la modificación de las siglas de WICKED a WCKD, y anécdotas del rodaje, como la presencia de peligrosas serpientes en el set, sumaron emoción a la creación de esta primera entrega.</p>
+    </div>
+    
+    <div>
+        <p class="main-paragraph2">La película también estuvo marcada por decisiones de casting interesantes y momentos inesperados. La insistencia de Blake Cooper a través de redes sociales para obtener el papel de Chuck es un claro ejemplo de la pasión de los seguidores por la historia. Además, el autor de los libros, James Dashner, realizó un cameo en la película, un guiño especial para los lectores. Curiosamente, algunos miembros del elenco de "Maze Runner" compartieron pantalla posteriormente en la exitosa serie "Juego de Tronos", creando una conexión inesperada entre ambas producciones. La filmación, aunque intensa y acelerada gracias al uso de múltiples cámaras, no estuvo exenta de desafíos, como las lesiones sufridas por el protagonista Dylan O'Brien a lo largo de la trilogía.</p>
+    </div>
+    
+    <details name="imagen">
+            <summary>Wess Ball Tweet</summary>
+            <img src="Img/DTC/WessBall.png" alt="Wess ball tweet (Wess Ball.png)">
+     </details>    
+
+    <h2>Película (Continuación) <i class="bi bi-film" style="color: white;"></i></h2>
+    <ul>
+        <li><strong>Primera película de Wes Ball:</strong> Maze Runner es la primera película que dirige Wes Ball, quien anteriormente solo había realizado cortometrajes como RUIN.</li>
+        <details name="imagen">
+            <summary>RUIN</summary>
+            <img src="Img/DTC/RUIN.jpg" alt="RUIN (RUIN.jpg)">
+        </details>    
+
+        <li><strong>Elenco bien recibido:</strong> A diferencia de otras adaptaciones juveniles, el elenco de Maze Runner fue bastante bien recibido entre los fanáticos de TMR.</li>
+        <details name="imagen">
+            <summary>Elenco</summary>
+            <img src="Img/DTC/Elenco.jpg" alt="Elenco (Elenco.jpg)">
+        </details>    
+
+        <li><strong>Eliminación de la telepatía:</strong> La parte de la telepatía entre Thomas y Teresa será eliminada en la película, ya que se consideró que sería demasiado empalagoso.</li>
+        <details name="imagen">
+            <summary>Telepatia</summary>
+            <img src="Img/DTC/Telepatia.jpg" alt="Telepatia (Telepatia.jpeg)">
+        </details>    
+
+        <li><strong>Campamento previo a la filmación:</strong> Antes de comenzar la filmación, los miembros del elenco se fueron de campamento para experimentar lo que es ser un habitante.</li>
+        <details name="imagen">
+            <summary>Campamento</summary>
+            <img src="Img/DTC/Campamento.jpg" alt="Campamento (Campamento.jpg)">
+        </details>   
+        
+        <li><strong>Catherine Hardwicke y la dirección:</strong> Catherine Hardwicke (Crepúsculo) originalmente iba a dirigir Maze Runner, pero afortunadamente Wes Ball llegó a salvar la adaptación.</li>
+         <details name="imagen">
+            <summary>Catherine</summary>
+            <img src="Img/DTC/Catherine.jpeg" alt="Catherine (Catherine.jpeg)">
+        </details>   
+        
+        <li><strong>Kaya Scodelario como Teresa:</strong> Kaya Scodelario era una de las actrices favoritas para interpretar el papel de Teresa en la película.</li>
+         <details name="imagen">
+            <summary>Kaya</summary>
+            <img src="Img/DTC/Kaya.jpg" alt="Kaya (Kaya.jpeg)">
+        </details>   
+        
+        <li><strong>Un año después del anuncio de Dylan:</strong> Justamente un año después de que se revelara que Dylan O'Brien protagonizaría Maze Runner, se estrenó el tráiler de la película.</li>
+         <details name="imagen">
+            <summary>Maze Runner</summary>
+            <img src="Img/DTC/Thomas.jpg" alt="Maze Runner (Logo MZR.png)">
+        </details>   
+        
+        <li><strong>Primeros tres actores confirmados:</strong> Los primeros tres actores confirmados para la película fueron Will Poulter, Thomas Brodie-Sangster y Aml Ameen.</li>
+         <details name="imagen">
+            <summary>Primeros tres actores</summary>
+            <img src="Img/DTC/TresActores.jpeg" alt="Tres Actores (Tres Actores.jpeg)">
+        </details> 
+        
+        <li><strong>Inicio de la filmación:</strong> La filmación de la película comenzó un lunes 13 de mayo en Baton Rouge.</li>
+         <details name="imagen">
+            <summary>Inicio de la filmación</summary>
+            <div class="video-container" style="text-align: center;">
+              <iframe width="1000" height="500" src="https://www.youtube.com/embed/nzxQ9mdT-Jg?si=Svel_T9JSwcxBJfh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+             </details> 
+        
+        <li><strong>Rumor de Josh Hutcherson:</strong> Antes de que se anunciara al elenco, existía un rumor de que Josh Hutcherson había sido elegido para el papel de Thomas. Muchos lo creyeron.</li>
+         <details name="imagen">
+            <summary>Rumor</summary>
+            <img src="Img/DTC/Josh.jpg" alt="Rumor (Josh.jpg)">
+        </details> 
+        
+        <li><strong>Estreno originalmente para San Valentín:</strong> Originalmente, la película iba a ser estrenada el día de San Valentín, lo que era todo lo contrario a una historia romántica.</li>
+         <details name="imagen">
+            <summary>San Valentin</summary>
+            <img src="Img/DTC/estreno.jpg" alt="San Valentin (Logo MZR.png)">
+        </details> 
+        
+        <li><strong>Brenton Thwaites y Connor Paolo para Thomas:</strong> Brenton Thwaites (El dador) y Connor Paolo fueron considerados para interpretar el papel de Thomas. Afortunadamente, Dylan O'Brien lo ganó.</li>
+         <details name="imagen">
+            <summary>Dos Actores</summary>
+            <img src="Img/DTC/DosActores.jpeg" alt="Dos Actores (Dos Actores.jpeg)">
+        </details> 
+        
+        <li><strong>WCKD en lugar de WICKED:</strong> Las siglas de WICKED (aka CRUEL) serán mostradas como WCKD en la película.</li>
+         <details name="imagen">
+            <summary>CRUEL</summary>
+            <img src="Img/DTC/CRUEL.jpg" alt="CRUEL (Logo MZR.png)">
+        </details> 
+        
+        <li><strong>Acento británico en el cast:</strong> Gran parte del elenco principal es británico, pero solo Newt (aka Thomas Brodie-Sangster) conservará el acento.</li>
+         <details name="imagen">
+            <summary>Acento Britanico</summary>
+            <img src="Img/DTC/ThomasBrodie.jpg" alt="Acento Britanico (Logo MZR.png) ">
+        </details> 
+        
+        <li><strong>Venta de derechos del segundo libro:</strong> Los derechos del segundo libro ya fueron vendidos a Fox, y el guion estuvo a cargo de T.S. Nowlin.</li>
+         <details name="imagen">
+            <summary>Venta de Derechos</summary>
+            <img src="Img/DTC/segundoLibro.jpg" alt="Venta de Derechos (Logo MZR.png)">
+        </details> 
+        
+        <li><strong>Serpientes en el set:</strong> Había 25 serpientes venenosas, incluyendo un cascabel de 5 metros, lo que complicó las grabaciones. Un miembro del equipo fue mordido por una de ellas.</li>
+         <details name="imagen">
+            <summary>Serpientes en el set</summary>
+            <img src="Img/DTC/serpientes.jpg" alt="Serpientes en el set (Logo MZR.png)">
+        </details> 
+        
+        <li><strong>Cambio en la segunda película:</strong> El director decidió modificar la segunda entrega de la trilogía en las películas, pero para la tercera sería fiel a los escenarios.</li>
+         <details name="imagen">
+            <summary>Cambio en la segunda pelicula</summary>
+            <img src="Img/DTC/segundaPelicula.jpg" alt="Cambio en la segunda pelicula (Logo MZR.png)">
+        </details> 
+        
+        <li><strong>Lesión de Dylan O'Brien:</strong> Dylan sufrió una lesión en el pómulo durante la primera película y otra más grave en la tercera entrega, lo que retrasó la película un año.</li>
+         <details name="imagen">
+            <summary>Lesion</summary>
+            <img src="Img/DTC/Lesion.jpg" alt="Lesion de Dylan (Lesion.jpg)">
+        </details> 
+        
+        <li><strong>Tiempo de grabación acelerado:</strong> Las escenas arriesgadas y de acción tardaban entre 4 y 5 meses en grabarse, pero la primera película se grabó en 44 días gracias al uso de tres cámaras para obtener más material en menos tiempo.</li>
+         <details name="imagen">
+            <summary>Tiempo de grabación acelerado</summary>
+            <img src="Img/DTC/detrasEscenas.jpg" alt="Tiempo de grabacion acelerado(Logo MZR.png)">
+        </details> 
+        
+        <li><strong>MTV:</strong>Dylan O'Brien por poco no interpretaba a Thomas pues el director dijo que percia que tenia pelo deL programa MTV.</li>
+         <details name="imagen">
+            <summary>Pelo MTV</summary>
+            <img src="Img/DTC/PeloMTV.jpg" alt="MTV (Pelo MTV.jpg)">
+        </details> 
+        
+    </ul>
+
+    <h2>Nombres inspirados en figuras históricas <i class="fas fa-user" style="color: white;"></i></h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Personaje</th>
+                <th>Inspiración</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Thomas</td>
+                <td>Thomas Edison</td>
+            </tr>
+            <tr>
+                <td>Newt</td>
+                <td>Isaac Newton</td>
+            </tr>
+            <tr>
+                <td>Alby</td>
+                <td>Albert Einstein</td>
+            </tr>
+            <tr>
+                <td>Chuck</td>
+                <td>Charles Darwin</td>
+            </tr>
+            <tr>
+                <td>Gally</td>
+                <td>Galileo Galilei</td>
+            </tr>
+            <tr>
+                <td>Teresa</td>
+                <td>Madre Teresa</td>
+            </tr>
+            <tr>
+                <td>Winston</td>
+                <td>Winston Churchill</td>
+            </tr>
+            <tr>
+                <td>Ben</td>
+                <td>Benjamin Franklin</td>
+            </tr>
+            <tr>
+                <td>Minho</td>
+                <td>Marido coreano de la sobrina de James Dashner</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Película (Continuación) <i class="bi bi-film" style="color: white;"></i></h2>
+    <ul>
+        <li><strong>Blake Cooper y su campaña:</strong> Blake Cooper, quien interpretó a Chuck, insistió tanto en Twitter para conseguir el papel que el director lo invitó a audicionar y lo eligió.</li>
+        <li><strong>Cameo de James Dashner:</strong> El autor de los libros hizo un cameo en la primera película, apareciendo en la junta del WCKD.</li>
+        <li><strong>Conexión con Juego de Tronos:</strong> Thomas Brodie-Sangster, Aidan Gillen y Nathalie Emmanuel aparecieron en Maze Runner y más tarde estarían en Juego de Tronos.</li>
+    </ul>
+
+    <h2>Libros <i class="fas fa-book"></i></h2>
+    <ul>
+        <li><strong>Publicación en español:</strong> El primer libro de Maze Runner en español, Correr o morir, fue publicado en Latinoamérica casi un año después de su publicación en inglés.</li>
+        <li><strong>Sartén/Frypan/Fritanga:</strong> En USA, el personaje de Sartén (en Latinoamérica) es conocido como Frypan, y en España, como Fritanga (¡ríete con ese último!).</li>
+        <li><strong>Apodo de Frypan:</strong> James mencionó que el apodo de Frypan (no su verdadero nombre) era Siggie.</li>
+        <li><strong>Stephen King como autor favorito:</strong> El autor favorito de James Dashner es Stephen King, y el nombre real de Thomas es Stephen.</li>
+        <li><strong>Logan Lerman en portada:</strong> Logan Lerman, uno de los favoritos para el papel de Thomas, aparece en la portada rusa de uno de los libros de la saga de Maze Runner.</li>
+        <li><strong>Inspiración en El señor de las moscas y El juego de Ender:</strong> Maze Runner está basado mayormente en El Señor de las Moscas y El Juego de Ender.</li>
+    </ul>
+
+    <iframe class="external-frame"
+            src="https://es.iwroteyouasong.org/articles/movies/30-fun-and-interesting-facts-about-the-maze-runner-movie.html" 
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+    </iframe>
+
+  </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

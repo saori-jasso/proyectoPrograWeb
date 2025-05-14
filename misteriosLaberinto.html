@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Saori Jasso, ,and Bootstrap contributors">
+    <title>Misterios del laberinto</title>
+    <link rel="icon" type="image/x-icon" href="Img/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="CSS/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Montserrat, sans-serif;
+            background-image: url('Img/corriendo.jpg'); 
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: #000000; /* Color beige para el texto general */
+        }
+        .container {
+            padding: 20px;
+            border-radius: 8px;
+            background-color: rgba(255, 255, 255, 0.732);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+             
+        }
+        h1 {
+            font-family: 'Orbitron', sans-serif;
+             font-weight: bold;
+             text-transform: uppercase;
+             letter-spacing: 3px;
+             margin-top: 1rem;
+             text-shadow: 0 0 10px rgba(147, 147, 147, 0.349);
+             color:rgb(47, 86, 84);
+             line-height: 1.2;
+             font-size: 2.5em;
+        }
+        h2 {
+            font-family: 'Orbitron', sans-serif;
+             font-weight: bold;
+             text-transform: uppercase;
+             letter-spacing: 3px;
+             margin-top: 1rem;
+             text-shadow: 0 0 10px rgba(147, 147, 147, 0.349);
+             color:rgb(63, 130, 109) ;
+             line-height: 1.2;
+             font-size: 1.5em;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #f5f5dc; /* Color beige para el texto de la tabla */
+        }
+        th, td {
+            border: 1px solid #555;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #333;
+            font-weight: bold;
+        }
+        p {
+            font-family: Montserrat, sans-serif;
+            line-height: 1.6;
+            color: #000000; /* Color beige para los párrafos */
+            margin-bottom: 10px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+        .iframeConfig {
+            width: 100%;
+            max-width: 1000px;
+            height: 800px;
+            margin: 30px auto;
+            box-shadow:0 0 30px rgba(0, 0, 0, 0.539) ;
+            border-radius: 5px;
+            display: block; /* Para centrarlo con margin auto */
+        }
+    </style>
+</head>
+<body class="colorHoja" style="padding: 5%; font-family: Montserrat, sans-serif; font-size: 1.2rem;">
+ <header data-bs-theme="dark">
+  <nav class="navbar navbar-expand-md navbar-light fixed-top navStyle">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">MAZE RUNNER</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav">
+          <!-- Dropdown: Libros -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink_1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Libros
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink_1">
+              <li><a class="dropdown-item" href="precuelas.html">Precuelas</a></li>
+              <li><a class="dropdown-item" href="trilogia.html">Trilogía Principal</a></li>
+              <li><a class="dropdown-item" href="secuelas.html">Secuela</a></li>
+              <li><a class="dropdown-item" href="adicionales.html">Lecturas Adicionales</a></li>
+            </ul>
+          </li>
+          <!-- Dropdown: Películas -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink_2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Películas
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink_2">
+              <li><a class="dropdown-item" href="correrOmorir.html">Correr o Morir</a></li>
+              <li><a class="dropdown-item" href="pruebaDeFuego.html">Prueba de Fuego</a></li>
+              <li><a class="dropdown-item" href="curaMortal.html">La Cura Mortal</a></li>
+            </ul>
+          </li>
+          <!-- Dropdown: Personajes -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink_3" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Personajes
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink_3">
+              <li><a class="dropdown-item" href="personajesPrincipales.html">Principales</a></li>
+              <li><a class="dropdown-item" href="secundarios.html">Secundarios</a></li>
+              <li><a class="dropdown-item" href="criaturas.html">Criaturas</a></li>
+            </ul>
+          </li>
+          <!-- Otros enlaces -->
+          <li class="nav-item">
+            <a class="nav-link" href="datosCuriosos.html">Datos Curiosos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="misteriosLaberinto.html">Misterios del Laberinto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<body>
+    <div class="container">
+        <h1>MISTERIOS DEL LABERINTO</h1>
+        <h2>Introducción:</h2>
+        <p>Maze Runner: Correr o morir en Hispanoamérica y una serie de películas de ciencia ficción distópicas basadas en el libro homónimo de 2009 de James Dashner. La serie se centra en un grupo de jóvenes que son misteriosamente encerrados en un laberinto gigante y peligroso, donde deben encontrar una manera de detener las letales y misteriosas diversas desolaciones y catástrofes.</p>
+
+        <h2>Misterios del laberinto:</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Aspecto</th>
+                    <th class="peliculas">LABERINTO EN LAS PELÍCULAS</th>
+                    <th class="libros">LABERINTO EN LOS LIBROS</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th class="aspecto">DIVISIONES Y ESTRUCTURA</th>
+                    <td class="peliculas">Ocho secciones similares. Para salir, una pared y una entrada sustituye el segundo como salida del laberinto.</td>
+                    <td class="libros">Ocho secciones formando una especie de cuadrado. Área B es el Área Segura. Pasillos cambian, pero las secciones internas no.</td>
+                </tr>
+                <tr>
+                    <th class="aspecto">SALIDA DEL LABERINTO</th>
+                    <td class="peliculas">La salida está en la puerta B que da a un túnel en el Acantilado. Deben saltar al vacío y llegar al siguiente túnel.</td>
+                    <td class="libros">Se necesita una llave del escarabajo para abrir la puerta. Después atraviesan una matando un penitente con un muro.</td>
+                </tr>
+                <tr>
+                    <th class="aspecto">CÓDIGO DEL LABERINTO</th>
+                    <td class="peliculas">Para encontrar el código de apertura debían de tener: SIETE, LABERINTO, SUPERFICIE, CONTAGIO, ATRÁS. Otras palabras clave: EMERGE, ATRAPAR, CÓDIGO, MUERTE, DIFÍCIL, PULSAR.</td>
+                    <td class="libros">Secuencia de apertura de secciones, memorizada por Minho e interpretada por Teresa en el ordenador.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>1-¿Quién creó el laberinto?</h2>
+        <p>El laberinto fue creado por la organización conocida como CRUEL, cuyas siglas en inglés son Catastrophic, Recharge, United, Earth, Labirynth. CRUEL se presenta como una organización que busca realizar experimentos con jóvenes para encontrar una cura para el virus conocido como "La Llamarada", una enfermedad que afecta el cerebro humano y provoca una degradación física y mental en las personas infectadas.</p>
+        <h2>2-¿Por qué los corredores pusieron a los adolescentes en el laberinto?</h2>
+        <p>Los creadores del laberinto, pertenecientes a WICKED (World Catastrophe Killzone Department), engañaron a los jóvenes haciéndoles creer que eran los únicos inmunes al virus que azotaba al mundo. El objetivo era que estos individuos pasaran por un entorno lleno de desafíos y peligros dentro del laberinto para estudiar sus respuestas fisiológicas y cerebrales. A través de este análisis, WICKED esperaba descubrir la clave para la inmunidad y, de este modo, encontrar la cura para el virus.</p>
+        <h2>3-¿Qué les ocurre a los habitantes del laberinto?</h2>
+        <p>Al final del primer libro, los protagonistas descubren que más allá del laberinto se encuentra un mundo devastado por el sol y azotado por una epidemia viral. El laberinto formaba parte de un experimento a nivel global que puso a prueba a los jóvenes supervivientes. En los tomos siguientes, los protagonistas se enfrentan al reto de sobrevivir en ese entorno hostil.</p>
+        <h2>4-¿Qué son los Grievers?</h2>
+        <p>En los libros, los Grievers son criaturas mecánicas con forma hibrida creadas por la organización CRUEL para poner a prueba a los jóvenes que se encuentran en el Área. Los Grievers emergen del Laberinto por las noches y atacan a cualquiera que se encuentre a su paso.</p>
+        <h2>5-¿Qué significan los códigos del laberinto?</h2>
+        <p class="respuesta-roja">En cuanto a los códigos del laberinto, estos son una secuencia de letras que cambian diariamente y que los habitantes del Área intentan memorizar para encontrar una manera de abrir las puertas del laberinto. Los códigos que Thomas y los otros corredores descubren, y que Teresa introduce en el ordenador al final del primer libro, revelan palabras y frases que dan pistas sobre el propósito del laberinto y la implicación de CRUEL.</p>
+        <iframe class="iframeConfig" src="https://mazerunner.fandom.com/es/wiki/El_Laberinto" width="600" height="400"></iframe>
+    </div>
+      
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>
