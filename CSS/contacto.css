@@ -1,0 +1,56 @@
+body {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    color: rgb(var(--bs-tertiary-color-rgb));
+}
+.carousel {
+    margin-bottom: 4rem;
+}
+/* Texto descriptivo que aparece sobre el carrusel */
+.carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+}
+/* Cada elemento individual del carrusel, define su altura */
+.carousel-item {
+    height: 32rem;
+}
+/*Columna de la sección marketing, centrada y con margen inferior */
+.marketing .col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+/* Párrafos dentro de las columnas de marketing -> con márgenes laterales */
+.marketing .col-lg-4 p {
+    margin-right: .75rem;
+    margin-left: .75rem;
+}
+/* Línea divisora entre secciones tipo featurette */
+.featurette-divider {
+    margin: 5rem 0; 
+}
+/* Título principal de la sección featurette, con menos espacio entre letras */
+.featurette-heading {
+    letter-spacing: -.05rem;
+}  
+/* ----------- RESPONSIVO ----------- */
+/* Ajustes para pantallas medianas en adelante */
+@media (min-width: 40em) {
+    /* Párrafos del carrusel con más espacio y tamaño de letra más grande */
+    .carousel-caption p {
+        margin-bottom: 1.25rem;
+        font-size: 1.25rem;
+        line-height: 1.4;
+    }
+    /* Título de featurette más grande en pantallas medianas */
+    .featurette-heading {
+        font-size: 50px;
+    }
+}
+/* Ajustes para pantallas grandes en adelante */
+@media (min-width: 62em) {
+    /* Título de featurette con más margen superior en pantallas grandes */
+    .featurette-heading {
+        margin-top: 7rem;
+    }
+}
